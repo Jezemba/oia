@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Organizationally-Intelligent Agents: A Taxonomy of Multi-Agent Engineering Systems</title>
+  <meta name="description" content="A taxonomy and characterization of multi-agent engineering systems through organizational design theory.">
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+</head>
+<body>
+
+<!-- Nav -->
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="https://www.jessicaezemba.com">
+        <span class="icon"><i class="fas fa-home"></i></span>
+      </a>
+      <a class="navbar-item" href="./static/oia_paper.pdf">Paper</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-2 publication-title">Organizationally-Intelligent Agents</h1>
+          <p class="is-size-4 has-text-grey">A Taxonomy and Characterization of Multi-Agent Engineering Systems Through Organizational Design Theory</p>
+
+          <div class="is-size-5 publication-authors" style="margin-top:1rem;">
+            <span class="author-block"><a href="https://www.jessicaezemba.com">Jessica Ezemba</a>,</span>
+            <span class="author-block">Christopher McComb,</span>
+            <span class="author-block">Conrad Tucker</span>
+          </div>
+          <div class="is-size-6 affiliations">Carnegie Mellon University</div>
+          <div class="is-size-6 venue">Design Computing and Cognition (DCC) 2026 &nbsp;&middot;&nbsp; Under Review</div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <span class="link-block">
+                <a href="./static/oia_paper.pdf" class="external-link button is-normal is-rounded">
+                  <span class="icon"><i class="fas fa-file-pdf"></i></span>
+                  <span>Paper (PDF)</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://www.jessicaezemba.com" class="external-link button is-normal is-rounded">
+                  <span class="icon"><i class="fas fa-user"></i></span>
+                  <span>Author</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Teaser -->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="has-text-centered">
+      <img src="./static/images/mapping.png" alt="9-category MAS architecture design space" style="max-width: 80%; height: auto;">
+      <p class="figure-caption">The 3x3 design space: organizational structure by operational methodology across 30 multi-agent frameworks.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Abstract -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>Organizational design has established principles for coordinating human teamwork over more than a century. Large language models have enabled multi-agent systems (MAS) for engineering design that invoke organizational terminology like "hierarchical" or "collaborative," yet current implementations fail to engage organizational design theory, making systematic comparison difficult.</p>
+          <p>This paper characterizes thirty MAS frameworks using 8 attributes, then develops a taxonomy reducing organizational structures to three types (Orchestrated, Networked, Sequential) and operational methodologies to three patterns (Iterative-Feedback, Graph-Routed, Staged-Pipeline). Mapping these categories to organizational design theory, we show that each architecture invokes specific mechanisms: Orchestrated systems face span of control constraints, Networked systems require common ground establishment, and Sequential systems depend on modularity principles, yet current implementations engage these concepts without leveraging organizational research. Analysis reveals substantial fragmentation, with implementations ranging from 2 to 22 agents using various orchestration platforms. Our taxonomy provides foundations for systematic comparison and principled agent team design.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Characterization: 8 attributes -->
+<section class="section" style="background-color:#fafafa;">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Characterizing 30 Frameworks</h2>
+    <p class="content has-text-centered has-text-grey">Each multi-agent system is characterized along 8 attributes spanning technical infrastructure and organizational design.</p>
+    <div class="attr-grid mt-4">
+      <div class="attr"><span class="n">01</span><div class="t">Orchestration Framework</div><div class="d">AutoGen, LangChain, custom systems.</div></div>
+      <div class="attr"><span class="n">02</span><div class="t">Organizational Structure</div><div class="d">How agents are arranged and authority is distributed.</div></div>
+      <div class="attr"><span class="n">03</span><div class="t">Reasoning Protocol</div><div class="d">CoT, ReAct, ToT, RAG, self-reflection.</div></div>
+      <div class="attr"><span class="n">04</span><div class="t">Operational Methodology</div><div class="d">Control loops, routing, V-Model, pipelines.</div></div>
+      <div class="attr"><span class="n">05</span><div class="t">State Representation</div><div class="d">Graphs, JSON, vector databases, memory.</div></div>
+      <div class="attr"><span class="n">06</span><div class="t">Modality</div><div class="d">Text, CAD, point clouds, simulation, images.</div></div>
+      <div class="attr"><span class="n">07</span><div class="t">Number of Agents</div><div class="d">From 2-agent pairs to 20+ ensembles.</div></div>
+      <div class="attr"><span class="n">08</span><div class="t">Asimow Design Activity</div><div class="d">Analysis, synthesis, evaluation coverage.</div></div>
+    </div>
+    <div class="has-text-centered mt-5">
+      <img src="./static/images/attributes.png" alt="Eight attributes of multi-agent systems" style="max-width: 78%; height: auto; border-radius:10px; border:1px solid #ededed;">
+    </div>
+  </div>
+</section>
+
+<!-- Taxonomy -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">A Two-Dimensional Taxonomy</h2>
+
+    <div class="dim mt-4">
+      <div class="dim-label">Organizational Structure (coordination mechanism)</div>
+      <div class="cat-row">
+        <div class="cat"><h4>Orchestrated</h4><p>A manager or supervisor agent centralizes coordination and delegates execution.</p></div>
+        <div class="cat"><h4>Networked</h4><p>Peer agents coordinate through shared state or messaging, with no central controller.</p></div>
+        <div class="cat"><h4>Sequential</h4><p>Agents execute in a predetermined pipeline with explicit stage-to-stage handoffs.</p></div>
+      </div>
+    </div>
+
+    <div class="dim">
+      <div class="dim-label">Operational Methodology (workflow control pattern)</div>
+      <div class="cat-row">
+        <div class="cat"><h4>Iterative-Feedback</h4><p>Repeated generate, evaluate, and refine cycles until convergence.</p></div>
+        <div class="cat"><h4>Graph-Routed</h4><p>Next step chosen by routing logic, state machines, or conditional branching.</p></div>
+        <div class="cat"><h4>Staged-Pipeline</h4><p>Fixed sequence of phases with prescribed transitions between stages.</p></div>
+      </div>
+    </div>
+
+    <div class="columns is-centered mt-5">
+      <div class="column has-text-centered">
+        <img src="./static/images/org_taxonomy.png" alt="Organizational structure decision tree" style="max-width: 100%; max-height: 22rem; height: auto; border-radius:10px; border:1px solid #ededed;">
+        <p class="figure-caption">Organizational structure decision tree.</p>
+      </div>
+      <div class="column has-text-centered">
+        <img src="./static/images/op_taxonomy.png" alt="Operational methodology decision tree" style="max-width: 100%; max-height: 22rem; height: auto; border-radius:10px; border:1px solid #ededed;">
+        <p class="figure-caption">Operational methodology decision tree.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Findings -->
+<section class="section" style="background-color:#fafafa;">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Key Findings</h2>
+    <div class="stats mt-4">
+      <div class="stat"><div class="v">53%</div><div class="l">Orchestrated structures</div></div>
+      <div class="stat"><div class="v">50%</div><div class="l">Iterative-Feedback workflows</div></div>
+      <div class="stat"><div class="v">33%</div><div class="l">Structure inferred, not stated</div></div>
+      <div class="stat"><div class="v">2 to 22</div><div class="l">Agents per system</div></div>
+      <div class="stat"><div class="v">0</div><div class="l">Sequential + Networked systems</div></div>
+    </div>
+    <div class="content has-text-justified mt-5">
+      <ul>
+        <li>Organizational structure: Orchestrated 53%, Networked 27%, Sequential 20%.</li>
+        <li>Operational methodology: Iterative-Feedback 50%, Graph-Routed 27%, Staged-Pipeline 23%.</li>
+        <li>The design space clusters in a few cells: Orchestrated plus Iterative-Feedback (27%), Networked plus Iterative-Feedback (20%), Sequential plus Staged-Pipeline (13%).</li>
+        <li>Sequential plus Networked has zero implementations, which is consistent since sequential decomposition contradicts peer coordination.</li>
+        <li>Orchestration platforms concentrate on AutoGen (10 papers) and LangChain (4), yet 33% use custom systems.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- Contributions -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Contributions</h2>
+    <div class="content has-text-justified mt-3">
+      <ul>
+        <li>A characterization and principled taxonomy of MAS organizational architectures, enabling systematic comparison across systems.</li>
+        <li>A mapping of the taxonomy to organizational design theory, showing that Orchestrated systems face span of control constraints, Networked systems require common ground, and Sequential systems depend on modularity, yet current implementations do not explicitly engage these concepts.</li>
+        <li>A vocabulary grounded in organizational design that can support more principled MAS architectures and guide how agent teams should be designed for engineering tasks.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- BibTeX -->
+<section class="section" style="background-color:#fafafa;">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3">BibTeX</h2>
+    <div class="bibtex-box">
+<pre>@inproceedings{ezemba2026organizationally,
+  title     = {Organizationally-Intelligent Agents: A Taxonomy and
+               Characterization of Multi-Agent Engineering Systems
+               Through Organizational Design Theory},
+  author    = {Ezemba, Jessica and McComb, Christopher and Tucker, Conrad},
+  booktitle = {Design Computing and Cognition (DCC)},
+  year      = {2026},
+  note      = {Under review}
+}</pre>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container is-max-desktop">
+    <div class="content has-text-centered">
+      <p style="font-size: 0.9rem; color: #4a4a4a;">Carnegie Mellon University, Pittsburgh, PA</p>
+      <p style="font-size: 0.85rem; color: #7a7a7a; margin-top: 0.75rem;">
+        This website is licensed under a
+        <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+        It borrows the layout of the <a href="https://nerfies.github.io">Nerfies</a> project page.
+      </p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

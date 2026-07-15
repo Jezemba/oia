@@ -1,0 +1,71 @@
+body {
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.title, .publication-title, .subtitle, .navbar-item, .button {
+  font-family: 'Google Sans', 'Noto Sans', sans-serif;
+}
+
+.publication-title { margin-bottom: 0.75rem; }
+.publication-authors { margin-top: 0.5rem; }
+.publication-authors a { color: #2a5db0; }
+
+.affiliations { margin-top: 0.5rem; color: #4a4a4a; }
+.venue { margin-top: 0.75rem; font-weight: 600; color: #1f3a93; }
+
+.publication-links { margin-top: 1.25rem; }
+.publication-links .button { background-color: #363636; color: #fff; }
+.publication-links .button:hover { background-color: #1f3a93; }
+
+.teaser img {
+  border: 1px solid #ededed;
+  border-radius: 10px;
+  box-shadow: 0 6px 24px -10px rgba(0,0,0,0.18);
+}
+
+.section { padding: 2.5rem 1.5rem; }
+.content p { line-height: 1.7; }
+
+/* taxonomy dimension groups */
+.dim { margin-bottom: 1.5rem; }
+.dim .dim-label {
+  font-weight: 700; color: #1f3a93; margin-bottom: 0.6rem;
+}
+.cat-row { display: flex; flex-wrap: wrap; gap: 0.6rem; }
+.cat {
+  background-color: #1f3a93; color: #fff; border-radius: 10px;
+  padding: 0.9rem 1rem; flex: 1 1 200px; max-width: 320px; text-align: left;
+}
+.cat h4 { color: #fff; font-weight: 700; margin-bottom: 0.3rem; }
+.cat p { color: #dbe3f7; font-size: 0.9rem; line-height: 1.4; }
+
+/* 8 attributes grid */
+.attr-grid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 0.6rem;
+}
+.attr {
+  border: 1px solid #e6e6e6; border-radius: 8px; padding: 0.75rem 0.9rem;
+  background: #fafbff;
+}
+.attr .n { color: #2a5db0; font-weight: 700; font-size: 0.8rem; }
+.attr .t { color: #363636; font-weight: 600; }
+.attr .d { color: #6b6b6b; font-size: 0.85rem; }
+
+/* stat highlights */
+.stats { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; }
+.stat {
+  text-align: center; padding: 0.75rem 1.25rem; border-radius: 10px;
+  background: #f5f7fd; min-width: 130px;
+}
+.stat .v { font-size: 1.8rem; font-weight: 700; color: #1f3a93; line-height: 1; }
+.stat .l { font-size: 0.85rem; color: #6b6b6b; margin-top: 0.35rem; }
+
+.bibtex-box {
+  background-color: #f5f5f5; border-radius: 8px; padding: 1.25rem 1.5rem; overflow-x: auto;
+}
+.bibtex-box pre { background: transparent; padding: 0; color: #363636; }
+
+.figure-caption {
+  color: #7a7a7a; font-style: italic; font-size: 0.95rem; margin-top: 0.5rem;
+}
